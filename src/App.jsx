@@ -7,11 +7,26 @@ import { Ifelse } from "./Components/ConditionalRendering/Ifelse";
 import { RanderList } from "./Components/RanderList";
 import { Aleart } from "./Aleart";
 import { EventHandle } from "./Components/Event/EventHandle";
+import { ParrentCom } from "./Components/Event/ParrentCom";
+import { ParrentCom1 } from "./Components/Event/ParrentCom";
+import { StateManagement } from "./Components/State/StateManagement";
+import { Loginout } from "./Components/State/Loginout";
+import { Batching } from "./Components/Batching";
+import { TestObj } from "./Components/Object/TestObj";
+
 
 function App() {
 
   return (
     <>
+      <TestObj />
+
+      {/* <Batching />
+      <Loginout />
+      <StateManagement />
+
+      <ParrentCom />
+      <ParrentCom1 />
       <EventHandle text='Like' />
       <EventHandle text='BookMark' />
 
@@ -34,7 +49,7 @@ function App() {
         </h1>
         <h1>role : manager</h1>
         <h1>age : 45</h1>
-      </Children>
+      </Children> */}
     </>
   );
 }
