@@ -16,6 +16,8 @@ import { TestObj } from "./Components/Object/TestObj";
 import { ArrayObj } from "./Components/Array";
 import { Usercount } from "./Components/Hooks/Usercount";
 import { ShoppingCart } from "./Components/Hooks/ShoppingCart";
+import { Lazy } from "./Components/Hooks/Lazy";
+import { CustomUseState } from "./Components/CustomUseState";
 ArrayObj;
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
           justifyContent: "space-between",
         }}
       >
-        <ShoppingCart />
+        <CustomUseState />
+        <Lazy />
+        {/* <ShoppingCart /> */}
         {/* <Usercount /> */}
         {/* <ArrayObj /> */}
         {/* <TestObj />
