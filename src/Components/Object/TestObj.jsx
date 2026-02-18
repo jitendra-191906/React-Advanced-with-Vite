@@ -35,14 +35,29 @@ export const TestObj = () => {
   };
   return (
     <>
-      <p> name{user.name}</p>
-      <p>age{user.age}</p>
-      <p> city{user.address.city}</p>
-      <p> country{user.address.country}</p>
-
-      <button onClick={handleAge}>chnage the age </button>
-      <button onClick={handlename}>chnage the name </button>
-      <button onClick={handlecity}>chnage the city </button>
+      <div
+        style={{
+          backgroundColor: "lightblue",
+          padding: 20,
+          borderRadius: 20,
+        }}
+      >
+        <p> Name: {user.name}</p>
+        <p>Age: {user.age}</p>
+        <p> City:{user.address.city}</p>
+        <p> Country: {user.address.country}</p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            gap: 20,
+          }}
+        >
+          <button onClick={handleAge}>chnage the age </button>
+          <button onClick={handlename}>chnage the name </button>
+          <button onClick={handlecity}>chnage the city </button>
+        </div>
+      </div>
     </>
   );
 };
