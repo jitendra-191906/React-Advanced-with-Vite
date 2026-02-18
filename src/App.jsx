@@ -18,10 +18,12 @@ import { Usercount } from "./Components/Hooks/Usercount";
 import { ShoppingCart } from "./Components/Hooks/ShoppingCart";
 import { Lazy } from "./Components/Hooks/Lazy";
 import { CustomUseState } from "./Components/CustomUseState";
-ArrayObj;
+import { Header } from "./Components/Hooks/ContactHook/header";
+import { UserContextProvider } from "./Components/Hooks/ContactHook/UserContextProvider";
+
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <div
         style={{
           display: "flex",
@@ -30,8 +32,10 @@ function App() {
           justifyContent: "space-between",
         }}
       >
-        <CustomUseState />
-        <Lazy />
+        <Header />
+
+        {/* <CustomUseState /> */}
+        {/* <Lazy /> */}
         {/* <ShoppingCart /> */}
         {/* <Usercount /> */}
         {/* <ArrayObj /> */}
@@ -64,7 +68,7 @@ function App() {
           <h1>age : 45</h1>
         </Children> */}
       </div>
-    </>
+    </UserContextProvider>
   );
 }
 
